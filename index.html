@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
     <link rel="stylesheet" href="bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="font/roboto/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="bootstrap-4.0.0/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
     <section>
@@ -18,16 +21,32 @@
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-4 m-auto">
                                 <div class="bg-white p-4 position-relative d-flex justify-content-center align-items-center">
+                                    <div class="school-name-logo position-absolute text-center">
+                                        <p>School Name</p>
+                                    </div>
                                     <form class="w-100 pt-5">
-                                        <div class="school-name-logo position-absolute">
-                                            <p>hello world</p>
-                                        </div>
                                         <h2 class="text-center">Sign in to your Account</h2>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <div class="form-group mb-0">
+                                            <div class="input-field mb-0">
+                                                <input id="Email_id" type="text" class="validate">
+                                                <label for="Email_id">Email id</label>
+                                            </div>
+                                            <!--<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">-->
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        <div class="form-group mb-0">
+                                            <div class="input-field mb-0">
+                                                <input id="Password" type="text" class="validate">
+                                                <label for="Password">Password</label>
+                                            </div>
+                                            <!--<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
+                                        </div>
+                                        <div class="form-check p-0">
+                                            <label>
+                                                <input type="checkbox" class="filled-in" checked="checked" />
+                                                <span>Remember Me</span>
+                                            </label>
+                                            <!--<input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1"></label>-->
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-primary">Submit</button>
