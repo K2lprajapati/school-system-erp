@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="font/roboto/stylesheet.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!--script start here-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="bootstrap-4.0.0/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -21,8 +25,8 @@
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-4 m-auto">
                                 <div class="bg-white p-4 position-relative d-flex justify-content-center align-items-center">
-                                    <div class="school-name-logo position-absolute text-center">
-                                        <p>School Name</p>
+                                    <div class="school-name-logo bounceInDown position-absolute text-center">
+                                        <img src="img/logo-white.eec7c7f6.svg" alt="school-logo">
                                     </div>
                                     <form class="w-100 pt-5">
                                         <h2 class="text-center">Sign in to your Account</h2>
@@ -40,16 +44,19 @@
                                             </div>
                                             <!--<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
                                         </div>
-                                        <div class="form-check p-0">
+                                        <div class="form-check p-0 d-flex justify-content-between">
                                             <label>
                                                 <input type="checkbox" class="filled-in" checked="checked" />
                                                 <span>Remember Me</span>
                                             </label>
+                                            <label>
+                                                <a href="#" class="forget-passowrd"><span>forget password</span></a>
+                                            </label>
                                             <!--<input type="checkbox" class="form-check-input" id="exampleCheck1">
                                             <label class="form-check-label" for="exampleCheck1"></label>-->
                                         </div>
-                                        <div class="text-center">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        <div class="text-center pt-5">
+                                            <a href="Admindeshboard.html"><button type="submit" class="btn btn-primary text-bold fadeInDown">Submit</button></a>
                                         </div>
                                     </form>
                                 </div>

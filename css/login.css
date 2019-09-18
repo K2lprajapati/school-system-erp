@@ -12,8 +12,10 @@ h1, h2, h3, h4, h5, h6, p {font-family: 'Roboto';font-weight: 300;}
 /*----------------------------*/
 .login-page{background-image: url('../img/login_bg.png');background-position: center;background-repeat: no-repeat;background-size: cover;width: 100%;height: 100vh;}
 .login-page .login-bg-overlay{background-color: rgba(0, 0, 0, 0.2);width: 100%;height: 100vh;}
-.login-page .school-name-logo{width: 86%;background-color: #03d0e2;padding: 18px;height: 125px;top: -70px;border-radius: 5px;box-shadow: 0 0 24px -3px rgba(0, 0, 0, 0.5);margin: 0;}
+.login-page .school-name-logo{animation-duration: 2s;width: 86%;background-color: #03d0e2;padding: 18px;height: 125px;top: -70px;border-radius: 5px;box-shadow: 0 0 24px -3px rgba(0, 0, 0, 0.5);margin: 0;}
 .login-page .school-name-logo form{padding-top: 57px;}
+.school-name-logo img{width: 50%;}
 .login-page  form h2{font-size: 25px;margin: 0 0 20px 0;}
-.login-page form button{background-color: #01b3c7;border: 1px solid #01b3c7;width: 120px;}
+.login-page form button{animation-duration: 2s; background-color: #03d0e2;border: 1px solid #03d0e2;width: 120px;box-shadow: 0 5px 9px 0 #b9b9b9, 0 0 0 0 #a0a0a0fa;}
+.login-page form button:hover{}
 .login-page form button:hover{background-color: unset;border:1px solid #01b3c7;color: #01b3c7;}
