@@ -8,50 +8,13 @@
 body {font-family: 'Roboto';font-weight: 300;color: #333;margin: 0;padding: 0;font-size: 16px;background: #f5f7f9;line-height: 24px;}
 h1, h2, h3, h4, h5, h6, p {font-family: 'Roboto';font-weight: 300;}
 
- .sidenav {
-     height: 100%;
-     width: 0;
-     position: fixed;
-     z-index: 1;
-     top: 0;
-     left: 0;
-     /* background-color: #111; */
-     overflow-x: hidden;
-     transition: 0.5s;
-     padding-top: 60px;
-     background-image: url('../img/sidebar-2.jpg');
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+/*------------------------*/
+/*-------sidebar css-------*/
+/*------------------------*/
+.sidenav {height: 100%;width: 0;z-index: 1;top: 0;left: 0;overflow-x: hidden;transition: 0.5s;
+    background-image: url('../img/sidebar-2.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;}
+.overlay{height: 100%;width: 100%;background-color: rgba(0,0,0,0.7);}
+.overlay img{width: 70px;}
+.sidenav a {text-decoration: none;font-size: 16px;transition: 0.3s;margin: 10px 15px 0;border-radius: 3px;padding: 10px 15px;}
+.sidenav a.aaa.active,.sidenav a.aaa.active:hover{color: #FFF;box-shadow: 0 12px 20px -10px rgba(0, 172, 193,.28), 0 4px 20px 0 rgba(0, 0, 0,.12), 0 7px 8px -5px rgba(0, 172, 193,.2);background-color: #00acc1;}
+.sidenav a.aaa:hover {outline: none;box-shadow: none;background-color: rgba(200, 200, 200, 0.2);}

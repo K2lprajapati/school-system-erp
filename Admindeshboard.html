@@ -19,45 +19,33 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
     <script src="bootstrap-4.0.0/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        function openNav() {
-            var e = document.getElementById("mySidenav");
-            var a = document.getElementById("open-menu");
-            if (e.style.width == '250px' && a.style.marginLeft == '250px') {
-                e.style.width = '0';
-                a.style.marginLeft = "0";
-            } else {
-                e.style.width = '250px';
-                a.style.marginLeft = "250px";
-            }
-        }
-
-        /*function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("open-menu").style.margin = "0";
-        }*/
-    </script>
+    <script src="js/index.js"></script>
 </head>
 <body>
 <header>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+    <div id="mySidenav" class="sidenav position-fixed">
+        <div class="overlay">
+            <div class="text-white">
+                <span class="d-flex align-items-center py-3">
+                    <img src="img/logo-white.svg" alt="login">
+                    <p class="text-white m-0">hello word</p>
+                </span>
+            </div>
+            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>-->
+            <a href="#" class="aaa active text-white d-block">About</a>
+            <a href="#" class="aaa text-white d-block">Services</a>
+            <a href="#" class="aaa text-white d-block">Clients</a>
+            <a href="#" class="aaa text-white d-block">Contact</a>
+        </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="open-menu" style="cursor:pointer"onclick="openNav()">
-        <i class="fa fa-align-justify"></i>
-        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="cursor:pointer">
+        <i class="fa fa-align-justify" id="open-menu" onclick="openNav()"></i>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            </ul>
+            <ul class="navbar-nav mr-auto"></ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
