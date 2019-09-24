@@ -18,3 +18,4 @@ h1, h2, h3, h4, h5, h6, p {font-family: 'Roboto';font-weight: 300;}
 .sidenav a {text-decoration: none;font-size: 16px;transition: 0.3s;margin: 10px 15px 0;border-radius: 3px;padding: 10px 15px;}
 .sidenav a.aaa.active,.sidenav a.aaa.active:hover{color: #FFF;box-shadow: 0 12px 20px -10px rgba(0, 172, 193,.28), 0 4px 20px 0 rgba(0, 0, 0,.12), 0 7px 8px -5px rgba(0, 172, 193,.2);background-color: #00acc1;}
 .sidenav a.aaa:hover {outline: none;box-shadow: none;background-color: rgba(200, 200, 200, 0.2);}
+.logo-text:after {content: "";border: 0.5px solid #fff;display: block;width: 88%;position: absolute;top: 80px;}
